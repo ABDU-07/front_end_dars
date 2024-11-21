@@ -1,0 +1,193 @@
+:root {
+    --orange: #d87d4a;
+    --black: #101010;
+    --gray: #f1f1f1;
+    --gray-light: #fafafa;
+
+    --orange-hover: #fbaf85;
+    --white: #ffffff;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"),
+        url("../fonts/Manrope-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Medium.woff2") format("woff2"),
+        url("../fonts/Manrope-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Bold.woff2") format("woff2"),
+        url("../fonts/Manrope-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Light.woff2") format("woff2"),
+        url("../fonts/Manrope-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Manrope", "Arial", sans-serif;
+    background: white;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--black);
+    padding: 35px 0;
+    border-bottom: 0.1px solid gray;
+}
+
+.logo {
+    width: 143px;
+    height: 25px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+    margin: 0;
+}
+
+.header__link {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.header__shopping {
+    width: 24px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.header__shopping:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.main {
+    margin-top: 0px;
+    text-align: center;
+    background: #000;
+    padding: 30px 0 30px 0;
+    color: white;
+}
+.footer {
+    background-color: var(--black);
+}
+
+.footer-center {
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+footer {
+    background-color: #000;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    color: var(--white);
+}
+
+.footer-left {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+    margin: 0;
+}
+
+.footer-link {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 100px;
+}
